@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+// import data from './data.json';
+import NivoCalendar from './NivoCalendar';
+import MyComponent from './Test';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +14,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <NivoCalendar />
+        <MyComponent name="Luar" age={20}></MyComponent>
       </div>
     </>
   )
